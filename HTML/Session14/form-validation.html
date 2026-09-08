@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form novalidate>
+        <input type="text" placeholder="username"> <br><br>
+        <input type="password" placeholder="password" required><br><br>
+        <input type="text" disabled><br><br>
+        <input type="text" placeholder="full name" size="50"> <br><br>
+        <input type="tel" placeholder="contact number" maxlength="10" minlength="10"> <br><br>
+        <input type="date" max="2026-09-28" min="2026-09-05"> <br><br>
+        <input type="number" placeholder="age" max="30"> <br><br>
+        <input type="number" placeholder="enter number" max="1000" step="10"> <br><br>
+        <input type="file" accept=".jpg , .png"> <br><br>
+        <input type="text" pattern="[A-Za-z0-9@#]{6}">
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
