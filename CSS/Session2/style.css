@@ -1,0 +1,31 @@
+#fname{
+    background-color: red;
+    color: white;
+}
+
+#lname{
+    background-color: fuchsia;
+}
+
+.degree {
+    background-color: orange;
+    color: white;
+}
+
+.bike {
+    background-color: greenyellow;
+}
+
+h3, h4, p {
+    background-color: darkturquoise;
+}
+
+img{
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.bike, #lname {
+    background-color: hotpink;
+}
