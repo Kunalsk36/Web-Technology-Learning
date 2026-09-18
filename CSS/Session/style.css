@@ -1,0 +1,45 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 20px 10px gray;
+    border-radius: 20px;
+    text-align : center;
+}
+
+.card img{ 
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 5px gray;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: rgb(156, 100, 47);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.card button:hover{
+    background-color: rgb(194, 126, 62);
+}
+
+#starf {
+    display: none;
+}
+
+.card h1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    font-weight: 800;
+    text-underline-offset: 5px;
+    text-shadow: 2px 2px 2px rgb(194, 126, 62);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card p {
+    text-indent: 45px;
+    text-align: justify;
+}
