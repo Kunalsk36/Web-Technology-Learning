@@ -1,0 +1,14 @@
+section{
+    text-align: center;
+    border: 1px solid;
+    width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    color: blue;
+}
+
+h1{
+    color: darkblue;
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
