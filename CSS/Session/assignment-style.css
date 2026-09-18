@@ -4,7 +4,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cardSection, .cardSection2{
+.cardSection, .cardSection2, .cardSection3, .cardSection4{
     background-color: aliceblue;
     margin: 10px;
     padding: 20px;
@@ -51,7 +51,7 @@
     color: slateblue;
 }
 
-.cardSection2 span{
+.cardSection2 span, .cardSection3 span span{
     text-decoration: line-through;
 }
 
@@ -84,4 +84,81 @@
 
 .cardSection2 h2 {
     font-size: 18px;
+}
+
+.cardSection3 .card, .cardSection4 .card{
+    text-align: left;
+}
+
+#price {
+    font-size: 14px;
+    color: dimgray
+}
+
+#offer {
+    width: 100px;
+    padding: 6px 0;
+    background-color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+#offerdesc {
+    width: 200px;
+    font-size: 14px;
+    background-color: transparent;
+    color: red;
+    text-align: center;
+    margin: -30px 0 15px 80px;
+
+}
+
+.cardSection3 .card h1{
+    font-size: 14px;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color:#000;
+}
+
+.cardSection3 .card{
+    padding: 0 20px 20px;
+    width: 250px;
+}
+
+.cardSection4 .card img{
+    width: 300px;
+}
+
+.cardSection4 .card h1{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:black;
+}
+
+.cardSection4 .card h4{
+    text-align: right;
+    margin: -30px 0 5px;
+    font-weight: 600;
+}
+
+.cardSection4 .card h5{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.cardSection4 .card h3{
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: rgb(0, 139, 90);
+}
+
+.cardSection4 .card p{
+    border-radius: 5px;
+    padding: 5px 0px 5px 10px;
+    font-size: 16px;
+    background-color: rgb(0, 205, 133);
+    color: white;
 }
