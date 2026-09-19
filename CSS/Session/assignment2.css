@@ -12,3 +12,52 @@ h1{
     background-color: aqua;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+#vega {
+    background-color: lightblue;
+}
+
+#fastrack {
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+}
+
+#fastrack h1 {
+    color: darkgreen;
+    background-color: darkseagreen;
+    border-radius: 10px;
+}
+
+#fastrack h3, #fastrack p {
+    color: darkgreen;
+}
+
+#nykaa {
+    background-color: lightpink;
+    border: 1px solid darkred;
+}
+
+#nykaa h1 {
+    color: darkred;
+    background-color: lightcoral;
+    border-radius: 20px;
+}
+
+#nykaa h3, #nykaa p {
+    color: darkred;
+}
+
+#hisense {
+    background-color: lightyellow;
+    border: 1px solid goldenrod;
+}
+
+#hisense h1 {
+    color: goldenrod;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+}
+
+#hisense h3, #hisense p {
+    color: goldenrod;
+}
