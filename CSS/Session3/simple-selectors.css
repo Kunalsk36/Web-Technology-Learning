@@ -1,0 +1,26 @@
+/* Universal Selector */
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Tag name or element selector */
+h1{
+    color: red;
+}
+
+/* ID selector */
+#p2{
+    color: blueviolet;
+}
+
+/* class selector */
+.container {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+
+/* Grouping Selector */
+h1, p {
+    background-color: yellow;
+}
