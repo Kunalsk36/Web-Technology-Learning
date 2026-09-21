@@ -1,0 +1,43 @@
+body{
+    height: 2000px;
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+}
+
+/* Position relative */
+#first {
+    background-color: red;
+    position: relative;
+    left: 100px;
+}
+
+/* Position fixed */
+#second {
+    background-color: green;
+    position: fixed;
+    left: 400px;
+}
+
+/* Position absolute */
+#third {
+    background-color: blue;
+    position: absolute;
+    right: 0;
+}
+
+/* Position sticky */
+#fourth {
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+}
+
+/* Position static*/
+#fifth {
+    position: static;
+    background-color: aquamarine;
+    left: 200px; /* this will be ignore if position is static*/
+}
