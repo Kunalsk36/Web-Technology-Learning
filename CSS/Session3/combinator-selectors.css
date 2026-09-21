@@ -1,0 +1,17 @@
+#descendant-combinator p {
+    color: green;
+}
+
+#child-combinator > p {
+    color: red;
+}
+
+#adjacent-sibling h1 + p {
+    color: navy;
+    background-color: yellow;
+}
+
+#general-sibling h3 ~ p {
+    color: brown;
+    background-color: blanchedalmond;
+}

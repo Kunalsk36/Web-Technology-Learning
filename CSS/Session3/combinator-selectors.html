@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selectors</title>
+    <link rel="stylesheet" href="combinator-selectors.css" />
+  </head>
+  <body>
+    <h2>Descendant Combinator</h2>
+    <section id="descendant-combinator">
+      <p>
+        The descendant combinator is simply a space. Select the child element
+        anywhere inside the parent. div p does not mean only direct child.
+      </p>
+      <p>It means any p inside div, regardless of nesting level.</p>
+      <div>
+        <p>
+          Descendant can go many levels deep. This paraghaph is inside div tag
+        </p>
+      </div>
+    </section>
+
+    <h2>Child Combinator</h2>
+    <section id="child-combinator">
+      <p>
+        The child combinator uses: > It selects only direct children. section →
+        p : is a direct parent-child relationship.
+      </p>
+      <div>
+        <p>
+          paraghraph inside div this will not get red color because of
+          child-combinator section → div → p : means the second p is not a
+          direct child of div.
+        </p>
+      </div>
+    </section>
+
+    <h2>Adjacent Sibling</h2>
+    <section id="adjacent-sibling">
+      <p>
+        The adjacent sibling combinator uses:+ It selects the immediately
+        following sibling.
+      </p>
+      <h3>Example:</h3>
+      <h1>Heading</h1>
+      <p>Paragraph 1 - Only Paragraph 1 is selected. Because Paragraph 1 comes immediately after h1</p>
+      <p>Paragraph 2</p>
+    </section>
+
+    <h2>General Sibling</h2>
+    <section id="general-sibling">
+        <h3>general-sibling h1</h3>
+        <p>The general sibling combinator uses:~</p>
+        <p>It selects all matching siblings that come after the first element.</p>
+        <p>Paraghraph 3 - this will also select</p>
+    </section>
+  </body>
+</html>
