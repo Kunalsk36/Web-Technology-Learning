@@ -1,0 +1,47 @@
+/* Pseudo-element before */
+#before h2::before {
+    content:"before ";
+    color: red;
+}
+
+#before h3::before {
+    content: "❤️";
+}
+
+#after h2::after {
+    content: "☠️ :";
+    background-color: black;
+    color: white;
+}
+
+#after h3::after {
+    content: "✨";
+}
+
+#after label::after{
+    content: "*";
+    color: red;
+}
+
+#first-letter h2::first-letter {
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#first-line p::first-line {
+    color: crimson;
+}
+
+#selection p::selection {
+    color: yellow;
+    background-color: black;
+}
+
+#marker li::marker {
+    color: red;
+}
+
+#another-list li::marker {
+    content: "👉";
+}

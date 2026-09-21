@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements Selectors</title>
+    <link rel="stylesheet" href="pseudo-elements-selectors.css" />
+  </head>
+  <body>
+    <h1>
+      A pseudo-element allows you to style or create a specific part of an HTML
+      element.
+    </h1>
+    <pre>
+        ::before
+        ::after
+        ::first-letter
+        ::first-line
+        ::selection
+        ::marker 
+    </pre>
+    <section id="before">
+      <h1>::before</h1>
+      <p>::before creates a pseudo-element before the content of an element.</p>
+      <h2>Example :</h2>
+      <h3>Hello Kunal!</h3>
+    </section>
+
+    <section id="after">
+      <h1>::after</h1>
+      <p>::after creates a pseudo-element after the content.</p>
+      <h2>Example</h2>
+      <h3>Hello KK</h3>
+      <label for="name">Name:</label><input type="text" />
+    </section>
+
+    <section id="first-letter">
+      <h1>::first-letter</h1>
+      <p>::first-letter selects the first letter of text.</p>
+      <h2>Kunal Kavathekar</h2>
+      <p>only first letter K is affected</p>
+    </section>
+
+    <section id="first-line">
+      <h1>::first-line</h1>
+      <p>
+        ::first-line styles the first line of text inside an element. Only the
+        first displayed line gets the style. The first line depends on the
+        available width. For example, if you resize the browser, the words
+        belonging to the first line can change.
+      </p>
+    </section>
+
+    <section id="selection">
+      <h1>::selection</h1>
+      <p>
+        ::selection styles text when the user selects/highlights it with the
+        mouse or keyboard.
+      </p>
+    </section>
+
+    <section id="marker">
+      <h1>::marker</h1>
+      <p>::marker allows you to style the marker of list items.</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p>
+        The bullet markers become red. You can also change the marker style:
+      </p>
+      <section id="another-list">
+        <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      </section>
+    </section>
+  </body>
+</html>
