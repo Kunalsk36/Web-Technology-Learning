@@ -1,0 +1,44 @@
+.parentparent {
+    height: 450px;
+    width: 900px;
+    background-color: aqua;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+
+.parent {
+    height: 400px;
+    width: 800px;
+    background-color: yellow;
+    position: absolute;
+    left: 50px;
+    top: 25px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: solid;
+}
+
+.box:first-child{
+    background-color: green;
+    position: absolute;
+    top: 140px;
+    left: 50px;
+}
+
+.box:nth-child(2) {
+    background-color: blue;
+    position: absolute;
+    top: 140px;
+    left: 330px;
+}
+
+.box:last-child {
+    background-color: red;
+    position: absolute;
+    top: 140px;
+    right: 50px;
+}
