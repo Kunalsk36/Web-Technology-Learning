@@ -1,0 +1,28 @@
+h1 {
+    height: 100px;
+    width: 200px;
+    /* margin: 50px; */
+    background-color: orange;
+    border: solid;
+    text-align: center;
+    align-content: center;
+    display: inline;
+}
+
+span {
+    display: block;
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+    border: solid;
+    margin: 10px;
+}
+
+p {
+    background-color: pink;
+    height: 100px;
+    /* display: inline-block; */
+    /* display: none; */
+    visibility: hidden;
+    width: 300px;
+}
