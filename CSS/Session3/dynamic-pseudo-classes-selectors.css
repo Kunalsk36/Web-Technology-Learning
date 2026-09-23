@@ -1,0 +1,19 @@
+button {
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: blue;
+    color:white;
+}
+
+button:active{
+    background-color: red;
+}
+
+input:focus {
+    border: 2px solid red;
+    outline: none;
+}
