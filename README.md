@@ -39,8 +39,8 @@ WEB TECH LEARNING/
 
 ## Current Progress
 
-- HTML: In progress
-- CSS: Not started
+- HTML: Completed
+- CSS: In progress
 - JavaScript: Not started
 - React: Not started
 
