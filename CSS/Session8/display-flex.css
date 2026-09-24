@@ -1,0 +1,27 @@
+.parent {
+    height: 300px;
+    width: 500px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    border: solid;
+    background-color: aquamarine;
+}
+
+.child:first-child {
+    background-color: red;
+}
+
+.child:nth-child(2) {
+    background-color: green;
+}
+
+.child:last-child {
+    background-color: blue;
+}
