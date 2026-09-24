@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    /* position: relative; */
 }
 
 .child {
@@ -12,16 +13,21 @@
     width: 100px;
     border: solid;
     background-color: aquamarine;
+    /* position: absolute;
+    top: 90px; */
 }
 
 .child:first-child {
     background-color: red;
+    /* left: 50px; */
 }
 
 .child:nth-child(2) {
     background-color: green;
+    /* left: 200px */
 }
 
 .child:last-child {
     background-color: blue;
+    /* left: 350px; */
 }
