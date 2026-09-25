@@ -1,5 +1,5 @@
 .parent {
-    background-color: orange;
+    background-color: antiquewhite;
     height: 300px;
     width: 500px;
     display: flex;
@@ -7,12 +7,15 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: column-reverse;
+    border: solid;
 }
 
 .child {
-    background-color: greenyellow;
+    background-color: palegreen;
     height: 100px;
     width: 100px;
     border: solid black;
     font-size: 24px;
+    text-align: center;
+    align-content: center;
 }
