@@ -1,0 +1,18 @@
+.parent {
+    background-color: orange;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.child {
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+    border: solid black;
+    font-size: 24px;
+}
