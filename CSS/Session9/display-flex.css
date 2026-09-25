@@ -1,12 +1,13 @@
 .parent {
     background-color: antiquewhite;
     height: 300px;
-    width: 500px;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column-reverse; */
+    flex-flow: wrap row;
     border: solid;
 }
 
@@ -18,4 +19,25 @@
     font-size: 24px;
     text-align: center;
     align-content: center;
+}
+
+.parent .child:first-child {
+    align-self: flex-start;
+}
+
+.parent .child:nth-child(2) {
+    align-self: center;
+}
+
+.parent .child:nth-child(3) {
+    align-self: flex-end;
+}
+
+.parent .child:nth-child(4) {
+    /* flex-grow: 1; */
+    flex-basis: 250px;
+}
+
+.parent .child:last-child {
+    flex-shrink: 1;
 }
