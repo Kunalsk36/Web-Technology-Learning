@@ -1,0 +1,53 @@
+body {
+    height: 700px;
+}
+
+.bg {
+    height: 500px;
+    width: 500px;
+    /* background-color: blue; */
+    /* background-color: #fa9b47; */
+    /* background-color: rgb(255, 0, 0); */
+    /* background-color: rgba(255, 0, 0, 0.5);  */
+    /* red, green, blue, alpha */
+    /* background-color: hsl(104, 93%, 68%);  */
+    /* hue, saturation, lightness */
+    /* background-color: hsla(50, 80%, 40%, 0.7); */
+    /* background: linear-gradient(90deg, red, pink ,orange); */
+    background: linear-gradient( orange, white, white, green);
+    /* background: radial-gradient(orange, maroon, red, rgb(255, 251, 0)); */
+    /* background: conic-gradient(pink, orange, red, blue, yellow); */
+}
+
+.bg img {
+    height: 120px;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.img-bg {
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    left: 550px;
+    top: 10px;
+    background-color: aquamarine;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSb9NMaNXxet-fOI7ps6S_yIFhlVHTJ2atkNMBgnT0uQ&s=10");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.img-bg2 {
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    left: 550px;
+    top: 320px;
+    background-color: aquamarine;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSb9NMaNXxet-fOI7ps6S_yIFhlVHTJ2atkNMBgnT0uQ&s=10");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
