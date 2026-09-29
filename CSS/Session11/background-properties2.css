@@ -1,0 +1,42 @@
+.bg {
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: navy;
+    border: 3px solid gray;
+    border-left: 2px solid navy;
+    border-top: 5px double black;
+    border-right: 3px dashed green;
+    border-bottom: 4px dotted red;
+}
+
+.bg2 {
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-top: none;
+    border: 10px solid magenta;
+    border: 20px ridge magenta;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq2B5R8akrg-CgZja3N_7hYyNuDbTqS9aHgXqBre8Ocg&s");
+    border:20px groove magenta;
+    border: 20px inset magenta;
+    border: 20px outset magenta;
+}
+
+.bg3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKbHAmlOxgGOBBkiu72pyvlDfXLNpFeIKrfMoVOaB4eg&s=10");
+    height: 250px;
+    width: 300px;
+    margin: 50px;
+    background-position: center;
+    background-size: cover;
+    border: 10px solid pink;
+    border-radius: 10px;
+    border-radius: 50%;
+    border-radius: 10%;
+    box-shadow: 0 0 20px 10px rgb(173, 43, 65);
+    box-shadow: 0 0 20px 10px rgb(173, 43, 65), 4px 4px 20px 10px rgb(162, 233, 255);
+}
