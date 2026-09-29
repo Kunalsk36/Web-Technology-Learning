@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.bg {
+    height: 450px;
+    width: 300px;
+    margin: 80px auto;
+    background-image: url("spiderman.png");
+    background-size: cover;
+    background-position: bottom;
+    animation: spidy 2.5s ease-in-out infinite alternate;
+    position: relative;
+    z-index: 100;
+}
+
+@keyframes spidy {
+    from {transform: rotate(30deg);}
+    to {transform: rotate(-30deg);}
+}
+
+.bg2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg2 img {
+    height: auto;
+    animation: webs 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes webs {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    100% {
+        width: 400px;
+        opacity: 1;
+    }
+}
+
+.extra {
+    position: absolute;
+    top: 0;
+}
+
+.extra img {
+    width: 350px;
+}
+
+.spider {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    z-index: 101;
+}
+
+.spider img {
+    width: 60px;
+    animation: moveSpider 12s ease-in-out infinite alternate;
+}
+
+@keyframes moveSpider {
+    0% {
+        transform: translate(0vw, 0vh) rotate(-90deg);
+    }
+    25% {
+        transform: translate(80vw, 20vh) rotate(45deg);
+    }
+    50% {
+        transform: translate(40vw, 70vh) rotate(180deg);
+    }
+    75% {
+        transform: translate(10vw, 40vh) rotate(-45deg);
+    }
+    100% {
+        transform: translate(85vw, 80vh) rotate(90deg);
+    }
+}
+
+.spider2 {
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+    z-index: 101;
+}
+
+.spider2 img {
+    width: 60px;
+    animation: moveSpider2 16s ease-in-out infinite alternate;
+}
+
+@keyframes moveSpider2 {
+    0% {
+        transform: translate(0vw, 0vh) rotate(90deg);
+    }
+    20% {
+        transform: translate(-70vw, -30vh) rotate(-120deg);
+    }
+    45% {
+        transform: translate(-20vw, -80vh) rotate(15deg);
+    }
+    70% {
+        transform: translate(-80vw, -70vh) rotate(-60deg);
+    }
+    100% {
+        transform: translate(-10vw, -10vh) rotate(200deg);
+    }
+}
