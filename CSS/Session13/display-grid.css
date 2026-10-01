@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -39,10 +44,14 @@ body {
     margin: 30px auto 0;
 }
 
+.contact h1 {
+    font-weight: 700;
+}
+
 .form {
     grid-row-start: 2;
     grid-row-end: 5;
-    height: 260px;
+    height: 300px;
     margin: 20px auto 0;
     padding: 20px;
     background-color: white;
@@ -65,6 +74,16 @@ body {
     height: 120px;
 }
 
+.form input[type="button"]{
+    width: 400px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.form input[type="button"]:hover {
+    background-color: whitesmoke;
+}
+
 .icons {
     width: 80%;
     display: flex;
@@ -78,19 +97,39 @@ body {
     margin-left: 10px;
 }
 
+.icons div:hover{
+    text-shadow: 1px 1px 2px black;
+}
+
+.icons div:first-child:hover {
+    color: rgb(255, 0, 208);
+}
+
+.icons div:nth-child(2):hover {
+    color: yellow;
+}
+
+.icons div:last-child:hover {
+    color: rgb(14, 212, 14);
+}
+
 .map {
     margin-top: -100px;
-    border: solid;
+    border: 1px solid gray;
     width: 500px;
     border-radius: 10px;
 }
 
 .map iframe{
-    height: 200px;
+    height: stretch;
     width: 500px;
     border-radius: 10px;
 }
 
 .address {
     width: 500px;
+}
+
+.address p:first-child {
+    font-weight: 600;
 }
