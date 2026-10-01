@@ -18,3 +18,16 @@
     resize: vertical;
     resize: both;
 }
+
+.bg2 {
+    height: 300px;
+    width: 200px;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 35% 0;
+    outline: 2px solid black;
+    outline-offset: -10px;
+    transform: rotate(25deg);
+    position: relative;
+    left: 100px;
+}
