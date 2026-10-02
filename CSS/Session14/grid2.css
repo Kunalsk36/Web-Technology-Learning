@@ -1,0 +1,15 @@
+.parent {
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    row-gap: 10px;
+}
+
+.child {
+    height: 200px;
+    width: 150px;
+    border: solid;
+}
