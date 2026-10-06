@@ -1,0 +1,25 @@
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 200px;
+    background-color: red;
+}
+
+.box:hover {
+    transition: 2s;
+    /* transform: scale(2); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: skew(180deg); */
+    /* transform: skewX(90deg); */
+    /* transform: skewY(90deg); */
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    /* transform: translate(300px); */
+    /* transform: translate(-300px); */
+    /* transform: translateX(200px); */
+    transform: translateY(200px);
+    transform: translateZ(300px);
+    transform: rotate(3600deg)
+}
