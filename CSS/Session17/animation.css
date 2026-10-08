@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    
+    object-fit: contain;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    border-radius: 50%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: alternate-reverse;
+}
+.box img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+@keyframes move {
+    0%{
+        /* transform: translateY(0); */
+        top: 0;
+        left: 0;
+        /* transform: skew(90deg); */
+        
+    }
+    25%{
+        /* transform: translateX(1150px); */
+        top: 0;
+        left: 1150px;
+        transform: rotate(360deg);
+        
+    }
+    50%{
+        /* transform: translateY(0); */
+        top: 450px;
+        left: 1150px;
+        transform: skew(360deg);
+    }
+    75%{
+        /* transform: translateY(100px,300px); */
+        top: 450px;
+        left: 0px;
+    }
+    100%{
+        /* transform: translateY(500px); */
+        left: 0;
+        top: 0;
+        transform: rotate(180deg);
+    }
+}
