@@ -6,14 +6,14 @@
 .navbar {
     height: 80px;
     width: 100%;
-    background-color: salmon;
+    background-color: black;
     display: flex;
 }
 
 .navbar .first {
     height: 80px;
     width: 65%;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     align-items: center;
 }
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .navbar .second input {
@@ -43,6 +43,77 @@
 }
 
 .first li a {
+    color: white;
     font-size: 24px;
     text-decoration: none;
+}
+
+.home {
+    height: 88vh;
+    width: 100%;
+    background-image: url("https://wallpapers.com/images/featured/desktop-background-bhmfm0in28785es7.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    filter: grayscale();
+}
+
+.home h1 {
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 20px black;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: salmon;
+    background-image: url("https://images.unsplash.com/photo-1659564131634-32ca6b67fa47?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2VycyUyMG9uJTIwYmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.about div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .image {
+    width: 300px;
+    height: 445px;
+    overflow: hidden;
+}
+
+.about .image img {
+    height: inherit;
+    border: 2px solid black;
+}
+
+.about .image, .about .image img {
+    border-radius: 20px 0 0 20px;
+}
+
+.about .image img:hover {
+    transition: 0.3s;
+    filter: grayscale(1);
+    transform: scale(1.2);
+}
+
+.about .para {
+    width: 600px;
+    height: 370px;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0 20px 20px 0;
 }
