@@ -82,6 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 20px rgb(189, 188, 188);
 }
 
 .about .image {
@@ -107,7 +108,7 @@
 
 .about .para {
     width: 600px;
-    height: 370px;
+    height: 365px;
     background-color: black;
     color: white;
     padding: 40px;
