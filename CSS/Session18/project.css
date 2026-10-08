@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: salmon;
+    display: flex;
+}
+
+.navbar .first {
+    height: 80px;
+    width: 65%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .second {
+    height: 80px;
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: red;
+}
+
+.navbar .second input {
+    width: 300px;
+    height: 30px;
+}
+
+.navbar .second button {
+    padding: 4px 40px;
+    font-size: 20px;
+}
+
+.first li {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.first li a {
+    font-size: 24px;
+    text-decoration: none;
+}
