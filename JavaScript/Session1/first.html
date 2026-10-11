@@ -31,6 +31,32 @@
         const pi = 3.14;
         // for const declaration and initialization must be in a single line
         console.log(pi);
+
+
+        var place;
+        console.log(place);
+        var place = "Ratnagiri";
+        console.log(place);
+        var place = "Pune";
+        console.log(place);
+        
+        console.log(window.place); // window is the supermost object
+        
+        let food = "Modak";
+        console.log(food);
+        // console.log(food2); // let variable can not use outside the scope
+        console.log(bike); // var variable can be used but it will show undefined.
+        {
+            var bike = "spendor";
+            let food2 = "Gulabjam"
+            console.log(bike);
+            console.log(food2);
+            console.log(food);
+        }        
+        console.log(bike); // var variable can use 
+        // console.log(food2); // let variable cannot use outside the scope
+        console.log(food);
+        
     </script>
 </body>
 </html>
