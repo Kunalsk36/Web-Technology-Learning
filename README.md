@@ -16,33 +16,58 @@ The Web Technology track will cover the following topics:
 
 ## Practice Structure
 
-Each session's concepts, examples, and assigned or practice tasks are stored in separate session-wise folders. The repository will grow with new session folders and technology folders as the course progresses.
+Each technology is organized into session-wise folders, and each folder contains the practical examples, assignments, and tasks completed during that phase of learning.
 
 ```text
 WEB TECH LEARNING/
 |-- README.md
 |-- HTML/
+|   |-- Assests/
 |   |-- Session1/
-|   |   |-- index.html
-|   |   `-- utf.html
 |   |-- Session2/
-|   |   |-- first.html
-|   |   `-- tags.html
-|   `-- Session3/
-|       |-- basic_tags.html
-|       |-- task1.html
-|       `-- task2.html
-|-- CSS/          (to be added)
-|-- JavaScript/   (to be added)
-`-- React/        (to be added)
+|   |-- Session3/
+|   |-- Session4/
+|   |-- Session5/
+|   |-- Session6/
+|   |-- Session7/
+|   |-- Session8/
+|   |-- Session9/
+|   |-- Session10/
+|   |-- Session11/
+|   |-- Session12/
+|   |-- Session13/
+|   |-- Session14/
+|   `-- Session15/
+|-- CSS/
+|   |-- Session1/
+|   |-- Session2/
+|   |-- Session3/
+|   |-- Session4/
+|   |-- Session5/
+|   |-- Session6/
+|   |-- Session7/
+|   |-- Session8/
+|   |-- Session9/
+|   |-- Session10/
+|   |-- Session11/
+|   |-- Session12/
+|   |-- Session13/
+|   |-- Session14/
+|   |-- Session15/
+|   |-- Session16/
+|   |-- Session17/
+|   `-- Session18/
+|-- JavaScript/
+|   `-- Session1/
+`-- React/        (upcoming)
 ```
 
 ## Current Progress
 
 - HTML: Completed
-- CSS: In progress
-- JavaScript: Not started
-- React: Not started
+- CSS: Completed
+- JavaScript: In Progress
+- React: Not Started
 
 ## Goal
 
