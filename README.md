@@ -58,7 +58,10 @@ WEB TECH LEARNING/
 |   |-- Session17/
 |   `-- Session18/
 |-- JavaScript/
-|   `-- Session1/
+|   |-- Session1/
+|   |-- Session2/
+|   |-- Session3/
+|   |-- Session4/
 `-- React/        (upcoming)
 ```
 
