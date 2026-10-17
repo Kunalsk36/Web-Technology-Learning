@@ -22,4 +22,8 @@ console.log(sub(10, "6")); // 4
 console.log(sub("10", "7")); // 3
 console.log(sub("10", 3)); // 7
 
-
+// we follow template literals or interpolution --> backticks `` and access variables by ${nameOfVariable}
+function displayMsg(msg, name, age) {
+    console.log(`${msg} My name is ${name} and I'm ${age} years old`);
+}
+displayMsg("Hii", "Kunal", 23);
