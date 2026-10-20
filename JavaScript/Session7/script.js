@@ -41,3 +41,36 @@ console.log(names.sort()); // ['abhishekh', 'kunal', 'nikhil', 'rohit', 'salman'
 // reverse an array
 console.log(names.reverse()); // ['tushar', 'salman', 'rohit', 'nikhil', 'kunal', 'abhishekh']
 
+// Array is dynamic in nature
+let festivals = ["ganesh chaturthi", "dashera", "diwali", "shimga", "sankranti"];
+console.log(festivals);
+console.log(festivals[7]);
+festivals[7] = "shivratri"
+console.log(festivals);
+console.log(festivals[7]);
+
+// 2nd way to create array 
+// by new constructor
+
+let foods = new Array("Modak", "Gulabjam", "Misal", "Vadapav");
+console.log(foods);
+
+let nums = new Array(3, 6, 9, 36, 99);
+console.log(nums);
+
+let place = new Array("Ratnagiri");
+console.log(place);
+
+
+// 3rd way to create an array - by declaring the size
+let places2 = new Array(15);
+console.log(places2);
+places2[0] = "ratnagiri";
+console.log(places2);
+
+places2[6] = "pune";
+places2[12] = "mumbai";
+console.log(places2);
+
+places2[20] = "banglore"; // since arrays are dynamic in js we can add value
+console.log(places2); 
