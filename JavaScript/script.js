@@ -44,3 +44,32 @@ console.log(trainers); // ['vijay', 'harsha', 'rohit', 'girish', Array(4)]
 console.log(trainers[4]); // ['sql', 'java', 'webtech', 'apti']
 console.log(trainers[2]); // rohit
 console.log(trainers[4][2]); // webtech
+
+let foods = ["misal", "pavbhaji", "Modak", "Gulabjam", "Dose"];
+console.log(foods); // ['misal', 'pavbhaji', 'Modak', 'Gulabjam', 'Dose']
+
+console.log(foods.indexOf("pavbhaji")) // 1
+
+console.log(foods.indexOf("modak")) // -1
+
+console.log(foods.includes("Dose")) // true
+console.log(foods.includes("vadapav")) // false
+
+foods.splice(0, 0, "Gulabjam");
+console.log(foods); // ['Gulabjam', 'misal', 'pavbhaji', 'Modak', 'Gulabjam', 'Dose']
+
+console.log(foods.lastIndexOf("Gulabjam")) // 4
+
+console.log(foods.sort()) // ['Dose', 'Gulabjam', 'Gulabjam', 'Modak', 'misal', 'pavbhaji']
+
+console.log(foods.reverse()); // ['pavbhaji', 'misal', 'Modak', 'Gulabjam', 'Gulabjam', 'Dose']
+
+let nums2 = [35, 7, 2, 96, 67];
+console.log(nums2); // [35, 7, 2, 96, 67]
+console.log(nums2.sort()); // [2, 35, 67, 7, 96]
+console.log(nums2.sort((a, b) => a-b)); // [2, 7, 35, 67, 96]
+
+let car1 = ["alto", "omni"];
+let car2 = ["Gwagon", "Defender"];
+let car3 = ["XUV", "KUV100", "Xylo"];
+console.log(car1.concat(car2, car3)); // ['alto', 'omni', 'Gwagon', 'Defender', 'XUV', 'KUV100', 'Xylo']
