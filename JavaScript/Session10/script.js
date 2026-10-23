@@ -29,3 +29,31 @@ console.log(plus10); // [20, 30, 46, 55, 63, 76]
 console.log(
     nums.map(e => e % 2 == 0)
 ); // [true, true, true, false, false, true]
+
+
+// forEach() 
+nums.forEach((ele) => {
+    console.log(ele);
+})
+
+nums.forEach((e, i, arr) => {
+    console.log(`Value : ${e} || Index : ${i} || Array : ${arr}`);
+})
+
+nums.forEach(e => console.log(e*10));
+
+// reduce() and reduceRight() - 
+let sum = nums.reduce((a, b) => a+b);
+console.log(`sum of array elements is ${sum}`);
+
+let sum2 = nums.reduceRight((a, b) => a+b);
+console.log(`sum of array elements using reduceRight() is ${sum2}`);
+
+let sub = nums.reduce((a, b) => a-b);
+console.log(`sub of array elements is ${sub}`);
+
+let sub2 = nums.reduceRight((a, b) => a-b);
+console.log(`sub of array elements using reduceRight() is ${sub2}`);
+
+// the reduceRight() will work from right to left 
+// the reduce() will work from left to right
