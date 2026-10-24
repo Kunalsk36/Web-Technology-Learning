@@ -30,3 +30,42 @@ console.log(stud.age == stud2.age); // false - because we stored with Symbol dat
 
 // Symbol() - It is primitive object datatype which stores examct same values uniquely.
 
+
+let val1 = 36;
+let val2 = "36"
+
+// double equal to (==) - It checks only the value of the variable and ignores the datatype.
+console.log(val1 == val2); // true
+
+ // triple equal to (===) - It checks both value and datatype of the variable.
+console.log(val1 === val2); // false
+
+let emp = {
+    ename : "Kunal",
+    salary : 30000,
+    hobbies : ["watching movies", "listning musics"],
+    // nested object
+    address : {
+        city : "ratnagiri",
+        state : "maharashtra"
+    }
+}
+
+console.log(emp);
+
+// accessing object property
+console.log(emp.ename);
+console.log(emp.address.city);
+
+
+// updating the object propery
+emp.salary = 36000;
+console.log(emp.salary);
+
+// deleting object property with delete keyword
+delete emp.address.state
+console.log(emp.address);
+
+// adding new key value pair data (property)
+emp.designation = "Software Developer";
+console.log(emp);
