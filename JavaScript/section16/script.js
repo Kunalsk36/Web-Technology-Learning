@@ -44,3 +44,20 @@ list.append(li2, "thar", " kuv300");
 let li3 = document.createElement("li");
 li3.textContent = "cycle";
 list.prepend(li3);
+
+// remove - it is used to remove an HTML element from the DOM
+let h5 = document.getElementsByTagName("h5");
+h5[0].remove();
+
+li2.remove();
+
+let img = document.createElement("img");
+img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq2B5R8akrg-CgZja3N_7hYyNuDbTqS9aHgXqBre8Ocg&s");
+document.body.appendChild(img);
+img.setAttribute("height", "300px");
+img.alt = "samantha ruth";
+
+let img2 = document.createElement("img");
+img2.setAttribute("src", "../../HTML/Assests/pawan-kalyan.jpg");
+document.body.appendChild(img2);
+img2.style.height = "300px"
