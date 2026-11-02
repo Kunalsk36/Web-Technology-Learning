@@ -25,6 +25,8 @@ div.setAttribute("id", "btn1");
 btn.innerHTML = "Click Me!";
 document.body.appendChild(btn);
 let btnClickedCount = 0;
+
+// modern way of handling event
 btn.addEventListener("click", ()=>{
     btnClickedCount++;
     div.textContent = `You Clicked on Button ${btnClickedCount} times!`;
@@ -53,3 +55,8 @@ document.body.appendChild(btn3)
 btn3.addEventListener("click", ()=>{
     alert1();
 })
+
+// Traditional way of handling event
+function func1() {
+    alert("function triggered");
+}
