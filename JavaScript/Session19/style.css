@@ -2,6 +2,10 @@
     color: red;
     font-size: 20px;
     background-color: yellow;
+    margin: 10px;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
 }
 
 .btn {
@@ -11,8 +15,22 @@
     border-radius: 10px;
     padding: 30px 60px;
     margin: 20px;
+    box-shadow: 0 0 10px 5px gray;
 }
 
 .btnAnimation:hover {
     transform: scale(1.1);
+    transition: ease-in 0.5s;
+    box-shadow: 0 0 10px 10px gray;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation {
+    0% {background-color: black;}
+    25% {background-color: brown;}
+    50% {background-color: crimson;}
+    75% {background-color: red;}
+    100% {background-color: rgb(255, 85, 0);}
 }
