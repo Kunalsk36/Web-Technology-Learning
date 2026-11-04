@@ -1,0 +1,18 @@
+.s1 {
+    color: red;
+    font-size: 20px;
+    background-color: yellow;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border: 5px solid rgb(72, 6, 6);
+    border-radius: 10px;
+    padding: 30px 60px;
+    margin: 20px;
+}
+
+.btnAnimation:hover {
+    transform: scale(1.1);
+}
