@@ -1,12 +1,14 @@
 .imgStyle {
     border: 5px solid rgb(255, 38, 74);
     border-radius: 20px;
-    object-fit: cover;
 }
 
 .imgStyle2 {
     border: 10px solid rgb(255, 0, 111);
     border-radius: 50px;
+}
+
+img{
     object-fit: cover;
 }
 
@@ -18,4 +20,9 @@
 .light {
     background-color: white;
     color: black;
+}
+
+.repStyleC {
+    background-color: darkred;
+    color: white;
 }

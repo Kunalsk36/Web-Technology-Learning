@@ -6,6 +6,8 @@ let img1 = document.getElementById("img1");
 let darkTheme = document.getElementById("darkTheme");
 let lightTheme = document.getElementById("lightTheme");
 let toggleTheme = document.getElementById("toggleTheme");
+let repStyle = document.getElementById('repStyle');
+
 
 addImg.addEventListener("click", ()=>{
     img1.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8QbrYyhEX0Cri9IOseX-6kTsbP-TpHao-wdiPCFTk_w&s=10"
@@ -38,9 +40,11 @@ lightTheme.addEventListener("click", ()=>{
 
 console.log(document.body.classList);
 toggleTheme.addEventListener("click", ()=> {
-    if(document.body.classList.contains('light')){
-        document.body.classList.remove('light')
-    }
-    
     document.body.classList.toggle("dark");
+})
+
+repStyle.addEventListener("click", ()=>{
+    document.body.classList.toggle("dark")
+    repStyle.classList.toggle("repStyleC")
+    repStyle.textContent = "Change Content";
 })
