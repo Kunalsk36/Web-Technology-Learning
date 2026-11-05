@@ -3,6 +3,9 @@ let addStyle = document.getElementById("addStyle");
 let replaceImg = document.getElementById("replaceImg");
 let replaceStyle = document.getElementById("replaceStyle");
 let img1 = document.getElementById("img1");
+let darkTheme = document.getElementById("darkTheme");
+let lightTheme = document.getElementById("lightTheme");
+let toggleTheme = document.getElementById("toggleTheme");
 
 addImg.addEventListener("click", ()=>{
     img1.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8QbrYyhEX0Cri9IOseX-6kTsbP-TpHao-wdiPCFTk_w&s=10"
@@ -18,4 +21,26 @@ replaceImg.addEventListener("mouseover", ()=>{
 
 replaceStyle.addEventListener("click", ()=>{
     img1.classList.replace("imgStyle", "imgStyle2");
+})
+
+darkTheme.addEventListener("click", ()=>{
+    console.log("dark");
+    document.body.classList.replace('light', 'dark');
+    console.log(document.body.classList)
+})
+
+lightTheme.addEventListener("click", ()=>{
+    console.log("light");
+    console.log(document.body.classList)
+    document.body.classList.replace('dark', 'light');
+    console.log(document.body.classList);
+})
+
+console.log(document.body.classList);
+toggleTheme.addEventListener("click", ()=> {
+    if(document.body.classList.contains('light')){
+        document.body.classList.remove('light')
+    }
+    
+    document.body.classList.toggle("dark");
 })
