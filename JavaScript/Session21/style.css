@@ -1,0 +1,8 @@
+#scrollSection {
+    height: 2000px;
+}
+
+#scrollText{
+    position: sticky;
+    top: 0;
+}
