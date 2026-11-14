@@ -32,18 +32,35 @@ let grandchild = document.getElementById("grandchild");
 // })
 // when grandchild triggered -> grandchild > child > parent (when true is not written)
 
+// parent.addEventListener("click", () => {
+//     parent.style.backgroundColor = "red";
+//     console.log("Parent Container triggered");
+// }, true)
+
+// child.addEventListener("click", () => {
+//     child.style.backgroundColor = "green";
+//     console.log("Child Container triggered");
+// }, true)
+
+// grandchild.addEventListener("click", () => {
+//     grandchild.style.backgroundColor = "blue";
+//     console.log("GrandChild Container triggered");
+// }, true)
+// // when grandchild triggered -> parent > child > grandchild (when true is written)
+
 parent.addEventListener("click", () => {
     parent.style.backgroundColor = "red";
     console.log("Parent Container triggered");
-}, true)
+})
 
-child.addEventListener("click", () => {
+child.addEventListener("click", (e) => {
     child.style.backgroundColor = "green";
     console.log("Child Container triggered");
-}, true)
+    e.stopPropagation();
+})
 
-grandchild.addEventListener("click", () => {
+grandchild.addEventListener("click", (e) => {
     grandchild.style.backgroundColor = "blue";
     console.log("GrandChild Container triggered");
-}, true)
-// when grandchild triggered -> parent > child > grandchild (when true is written)
+    e.stopPropagation();
+})
