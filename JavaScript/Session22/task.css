@@ -54,7 +54,15 @@ ul li button {
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
-    background-color: #dc3545;
     color: white;
     cursor: pointer;
+}
+
+ul li button:last-child {
+    background-color: #dc3545;
+}
+
+ul li button:first-child {
+    background-color: #3ddc35;
+    margin-right: 10px;
 }

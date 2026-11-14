@@ -23,10 +23,15 @@ function addTask() {
     if(task.value.trim() !== ""){
         let li = document.createElement("li");
         let deleteBtn = document.createElement("button");
+        let completeBtn = document.createElement("button");
+        let span = document.createElement("span");
+        completeBtn.innerHTML = "Complete";
         deleteBtn.innerHTML = "Delete";
         list.appendChild(li);
         li.innerHTML = task.value+" ";
-        li.appendChild(deleteBtn);
+        li.appendChild(span);
+        span.appendChild(completeBtn);
+        span.appendChild(deleteBtn);
         task.value = "";
         updateTitle();
     }
@@ -44,8 +49,14 @@ btn.addEventListener("click", ()=>{
 
 list.addEventListener("click", (e) => {
     if(e.target.tagName === "BUTTON" && e.target.innerHTML === "Delete") {
-        e.target.parentElement.remove();
+        e.target.parentElement.parentElement.remove();
         updateTitle();
+    }
+
+    if(e.target.tagName === "BUTTON" && e.target.innerHTML === "Complete") {
+        e.target.style.textDecoration = "line-through";
+        e.target.parentElement.parentElement.style.backgroundColor = "#202020";
+        e.target.parentElement.parentElement.style.textDecoration = "line-through";
     }
 })
 
