@@ -55,8 +55,10 @@ list.addEventListener("click", (e) => {
 
     if(e.target.tagName === "BUTTON" && e.target.innerHTML === "Complete") {
         e.target.style.textDecoration = "line-through";
+        e.target.style.textDecorationColor = "#be1515";
         e.target.parentElement.parentElement.style.backgroundColor = "#202020";
         e.target.parentElement.parentElement.style.textDecoration = "line-through";
+        e.target.parentElement.parentElement.style.textDecorationColor = "#be1515";
     }
 })
 
