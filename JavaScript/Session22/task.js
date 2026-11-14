@@ -19,7 +19,7 @@ function updateTitle() {
     }
 }
 
-btn.addEventListener("click", ()=>{
+function addTask() {
     if(task.value.trim() !== ""){
         let li = document.createElement("li");
         let deleteBtn = document.createElement("button");
@@ -30,6 +30,16 @@ btn.addEventListener("click", ()=>{
         task.value = "";
         updateTitle();
     }
+}
+
+task.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        addTask();
+    }
+})
+
+btn.addEventListener("click", ()=>{
+    addTask();
 })
 
 list.addEventListener("click", (e) => {
