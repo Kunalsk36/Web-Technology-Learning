@@ -12,3 +12,25 @@ ul.addEventListener("click", (e) => {
     }
     content.innerHTML = e.target.textContent;
 })
+
+/**
+ * string methods:
+ */
+
+let str = "Kunal Kavathekar";
+console.log(str.charAt(0)); // K
+console.log(str.concat(" is a Software Developer")) // Kunal Kavathekar is a Software Developer
+console.log(str.endsWith("kar")); // true
+console.log(str.startsWith("K")) // true // case-sensitive k and K are treated different
+console.log(str.includes("Kunal")); // true
+console.log(str.indexOf("l")); // 4
+console.log(str.lastIndexOf("k")); // 13
+console.log(str.replace("Kavathekar", "K")); // Kunal K
+console.log(str) // Kunal Kavathekar
+console.log(str.trim()); // if we have extra spaces then that will be removed from both start and end // Kunal Kavathekar
+console.log(str.trimStart()) // removed spaces from start only
+console.log(str.trimEnd()) // removed spaces from end only
+console.log(str.toUpperCase()) // KUNAL KAVATHEKAR
+console.log(str.toLowerCase()) // kunal kavathekar
+
+console.log(str.length); // 16 // it is a property not a string method.
