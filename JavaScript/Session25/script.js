@@ -13,3 +13,12 @@ console.log(date.getTime());
 console.log(date.toJSON());
 console.log(date.toString());
 
+let calcAgeBtn = document.getElementById("calcAge");
+let ageResult = document.getElementById("ageResult");
+
+function calculateAge() {
+    let birthYear = prompt("Enter you birth year : ");
+    ageResult.innerHTML = `Your age is ${date.getFullYear() - birthYear}` 
+}
+
+calcAgeBtn.addEventListener("click", calculateAge);
