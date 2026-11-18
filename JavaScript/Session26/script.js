@@ -56,9 +56,17 @@ stud1.print.call(stud2);
 stud1.print.call(stud3);
 
 // we can write the function out of the object and by using call() we can acess
-function print2(abc) {
-    console.log(`name is ${this.sname} ${abc}`);
+function print2(companyName) {
+    console.log(`name is ${this.sname} - ${companyName}`);
 }
 
 print2.call(stud2)
-print2.call(stud3, "kunal kavathekar");
+
+// we can pass arguments as well
+print2.call(stud3, "TCS");
+
+function print3(companyName1, location) {
+    console.log(`name is ${this.sname} | companyName -  ${companyName1} | location - ${location}`)
+}
+// we should pass arguments in array
+print3.apply(stud1, ["Infosys", "banglore"])
