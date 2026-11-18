@@ -69,4 +69,10 @@ function print3(companyName1, location) {
     console.log(`name is ${this.sname} | companyName -  ${companyName1} | location - ${location}`)
 }
 // we should pass arguments in array
-print3.apply(stud1, ["Infosys", "banglore"])
+print3.apply(stud1, ["Infosys", "banglore"]);
+
+// bind() - binding an object with current values
+// if we bind any object the values will be constant 
+
+let result = print3.bind(stud1);
+console.log(result);
