@@ -54,3 +54,11 @@ let stud3 = {
 stud1.print();
 stud1.print.call(stud2);
 stud1.print.call(stud3);
+
+// we can write the function out of the object and by using call() we can acess
+function print2(abc) {
+    console.log(`name is ${this.sname} ${abc}`);
+}
+
+print2.call(stud2)
+print2.call(stud3, "kunal kavathekar");
