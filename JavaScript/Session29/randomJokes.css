@@ -1,0 +1,109 @@
+/* randomJokes.css — funny, minimal, interactive */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdf5e6;
+  background-image:
+    radial-gradient(circle at 15% 10%, #ffefb0, transparent 40%),
+    radial-gradient(circle at 90% 20%, #f7d5c0, transparent 35%),
+    linear-gradient(180deg, #fdf5e6 0%, #faecd8 100%);
+  font-family: "Segoe UI", system-ui, -apple-system, "Nirmala UI", sans-serif;
+  color: #333;
+  padding: 24px;
+}
+
+.container {
+  width: min(560px, 100%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+.tagline {
+  margin-top: 8px;
+  color: #7a6a5b;
+  font-size: 0.95rem;
+}
+
+#joke-btn {
+  margin-top: 26px;
+  padding: 13px 32px;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: #fff;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(255, 107, 107, 0.45);
+  transition: transform 0.18s ease, box-shadow 0.25s ease, background 0.2s ease;
+}
+
+#joke-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: #ff5252;
+  box-shadow: 0 10px 24px rgba(255, 107, 107, 0.6);
+}
+
+#joke-btn:active {
+  transform: translateY(1px) scale(0.96);
+}
+
+#joke-btn:focus-visible {
+  outline: 3px solid #ffd166;
+  outline-offset: 4px;
+}
+
+#joke-btn:disabled {
+  cursor: progress;
+  opacity: 0.85;
+}
+
+.joke-box {
+  margin: 26px auto 0;
+  width: 100%;
+  min-height: 120px;
+  padding: 26px;
+  background: #fff;
+  border: 2px dashed #ffd166;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.joke-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.joke-text {
+  font-size: 1.3rem;
+  line-height: 1.55;
+  word-break: break-word;
+}
+
+.hint {
+  margin-top: 18px;
+  color: #8c7b6b;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 560px) {
+  h1 { font-size: 1.75rem; }
+  .joke-text { font-size: 1.1rem; }
+  #joke-btn { padding: 11px 24px; font-size: 0.95rem; }
+}
